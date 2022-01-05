@@ -28,6 +28,7 @@ export default defineConfig({
       }
     }
   },
+  // 本地开发时
   // server: {
   //   proxy: {
   //     '/api': {

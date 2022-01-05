@@ -78,7 +78,7 @@ export const imgUrlTrans = (url) => {
   if (url && url.startsWith('http')) {
     return url
   } else {
-    url = `${MODE == 'development' ? 'http://localhost:7001' : baseUrl}${url}`
+    url = `${MODE == 'development' ? 'http://47.103.140.189:7001' : baseUrl}${url}`
     return url
   }
 }
