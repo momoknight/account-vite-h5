@@ -72,7 +72,7 @@ const Home = () => {
     monthRef.current && monthRef.current.show()
   };
 
-  // 
+  //
   const addToggle = () => {
     addRef.current && addRef.current.show()
   }
@@ -94,9 +94,12 @@ const Home = () => {
 
   return <div className={s.home}>
     <div className={s.header}>
+      <div className={s.appTitle}>
+        <span>EasyJI</span>
+      </div>
       <div className={s.dataWrap}>
-        <span className={s.expense}>总支出：<b>¥ {totalExpense}</b></span>
-        <span className={s.income}>总收入：<b>¥ {totalIncome}</b></span>
+        <span className={s.expense}>总支出：¥ {totalExpense}</span>
+        <span className={s.income}>总收入：¥ {totalIncome}</span>
       </div>
       <div className={s.typeWrap}>
         <div className={s.left} onClick={toggle}>

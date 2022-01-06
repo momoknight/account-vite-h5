@@ -1,0 +1,48 @@
+.auth {
+  min-height: 100vh;
+}
+.auth .head {
+  height: 278px;
+  background: url('//raw.githubusercontent.com/momoknight/blog-images/main/login.png') no-repeat center;
+  background-size: 120%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.auth .head img {
+  width: 34px;
+}
+.auth .tab {
+  color: #363636;
+  padding: 30px 24px 10px 24px;
+}
+.auth .tab > span {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.auth .tab > span.avtive {
+  font-size: 20px;
+  border-bottom: 2PX solid #363636;
+  padding-bottom: 6px;
+}
+.auth .form {
+  padding: 0 6px;
+}
+.auth .form :global .za-cell {
+  background-color: transparent;
+}
+.auth .form :global .za-cell::after {
+  border-top: none;
+}
+.auth .operation {
+  padding: 10px 24px 0 24px;
+}
+.auth .operation .agree {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.auth .operation .agree label {
+  margin-left: 10px;
+  font-size: 14px;
+}

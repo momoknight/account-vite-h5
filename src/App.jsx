@@ -20,16 +20,23 @@ function App() {
   useEffect(() => {
     setShowNav(needNav.includes(pathname))
   }, [pathname])
-  return <React.Fragment>
-    <ConfigProvider primaryColor={'#007fff'} locale={zhCN}>
-      <Routes>
-        {
-          routes.map(route => <Route exact key={route.path} path={route.path} element={<route.component />} />)
-        }
-      </Routes>
-    </ConfigProvider>
-    <NavBar showNav={showNav} />
-  </React.Fragment>
+  return (
+    <React.Fragment>
+      <ConfigProvider primaryColor={"#363636"} locale={zhCN}>
+        <Routes>
+          {routes.map((route) => (
+            <Route
+              exact
+              key={route.path}
+              path={route.path}
+              element={<route.component />}
+            />
+          ))}
+        </Routes>
+      </ConfigProvider>
+      <NavBar showNav={showNav} />
+    </React.Fragment>
+  );
 }
 
 export default App;

@@ -35,7 +35,7 @@ const Account = (props) => {
   }
 
   return <>
-    <Header title="重制密码" />
+    <Header title="重置密码" />
     <div className={s.account}>
       <div className={s.form}>
         <Cell title="原密码">
@@ -58,7 +58,7 @@ const Account = (props) => {
           <Input
             clearable
             type="text"
-            placeholder="请再此输入新密码确认"
+            placeholder="请再次输入新密码"
             {...getFieldProps('newpass2', { rules: [{ required: true }] })}
           />
         </Cell>
