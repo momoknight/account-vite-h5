@@ -21,7 +21,8 @@ const About = () => {
       <article>
         <ul>
           <li>姓名：陶银程</li>
-          <li>毕业学校：东北大学</li>
+          <li>毕业学校--本科：沈阳师范大学</li>
+          <li>毕业学校--硕士：东北大学</li>
           <li>应聘岗位：前端开发</li>
         </ul>
       </article>
