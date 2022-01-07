@@ -37,6 +37,7 @@ const Login = () => {
         });
         console.log(data);
         localStorage.setItem('token', data.token);
+        Toast.show("登录成功");
         window.location.href = '/';
       } else {
         if (!verify) {
@@ -52,7 +53,7 @@ const Login = () => {
           password
         });
         Toast.show('注册成功');
-         setType('login');
+        setType('login');
       }
     } catch (err) {
       Toast.show(err.msg);
