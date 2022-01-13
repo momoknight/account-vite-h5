@@ -3,7 +3,7 @@
 }
 .auth .head {
   height: 278px;
-  background: url('//raw.githubusercontent.com/momoknight/blog-images/main/login.png') no-repeat center;
+  background: url('https://gitee.com/momoknight/image/raw/master/login.png') no-repeat center;
   background-size: 120%;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
